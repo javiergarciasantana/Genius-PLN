@@ -1,5 +1,4 @@
-Title,Lyrics
-Agüita,"Bajan la cumbre en procesión
+Bajan la cumbre en procesión
 Asustando a la oscuridad
 Velas de blanca bruma
 Le robaron a la luna
@@ -33,8 +32,9 @@ A quién amar
 ¡Agüita agüita! que la rama está sequita
 ¡Agüita agüita! que ya está bailando el sol
 ¡Agüita agüita! que las penas se me quitan
-¡Agüita! agüita! y me alegra el corazón"
-Aires de Lima de Valsequillo,"Quiéreme así, Dios de quiera
+¡Agüita! agüita! y me alegra el corazón
+
+Quiéreme así, Dios de quiera
 Mira que esa no es razón
 Quiéreme así, Dios de quiera
 Mira que esa no es razón
@@ -113,8 +113,9 @@ Amor mío cuando viene
 Y ajeno cuando se va
 Ay
 Ay con ay, más ay
-Y ajeno cuando se va"
-Atocha 53,"Vivo en Atocha 53
+Y ajeno cuando se va
+
+Vivo en Atocha 53
 Junto a las vías de un viejo tren
 Un cuarto piso sin ascensor
 Y una portera que hace croché
@@ -193,8 +194,9 @@ Con una pena que usted no ve
 Eh eh eh
 Ya la alegría sale al balcón
 Eh eh eh
-Buscando el mar donde me crié"
-Campanas de Vegueta,"Barrio de Vegueta
+Buscando el mar donde me crié
+
+Barrio de Vegueta
 Barrio donde nací
 Torre de la Audiencia
 De San Agustín
@@ -224,8 +226,9 @@ Al mar, al mar
 Repican, ya sevan
 Repican, ya se van
 Al mar, al mar, al mar
-Barrio de Vegueta"
-Canción para la tierra,"Que ya me voy caminando
+Barrio de Vegueta
+
+Que ya me voy caminando
 Pregonando mi cantar
 Soy de una tierra que nace
 A la orilla del mar
@@ -256,16 +259,18 @@ De retama y tarajal
 Un son para mi tierra
 Pregona mi cantar
 Resuena los caminos
-Desde la cumbre al mar"
-Canto de arar,"Ayúdame compañero
+Desde la cumbre al mar
+
+Ayúdame compañero
 A segar esta cebada
 Que no se diga mañana
 Que esta tierra está pesada
 En el campo trabajando
 Voy a fenecer mi vida
 Si no es de día es de noche
-Si no es de noche es de día-"
-Danza del trigo,"Según dice el viejo
+Si no es de noche es de día-
+
+Según dice el viejo
 Cho Juan Perenal
 Son cosas parejas
 Sembrar y enterrar
@@ -300,9 +305,11 @@ Cho Juan Pеrinal
 Que hay cosas iguales
 Que no son igual:
 Vivir y morir
-Sеmbrar y enterrar"
-El Viaje de San Brandán,
-El Zagalejo,"Ven conmigo al naciente
+Sеmbrar y enterrar
+
+
+
+Ven conmigo al naciente
 A cargarme la talla
 Ven conmigo al naciente
 A cargarme la talla
@@ -326,8 +333,9 @@ A cargarme la talla
 No te alongues ansina pa' alante, que puede que te caigas
 No te alongues ansina pa' alante, que puede que te caigas
 ...¡Y estate quieta! ¡Mira a ver si te rompo el zagalejo!
-¡Mira a ver si te rompo el zagalejo!"
-En busca de Valentina,"Tirinainai tirinai
+¡Mira a ver si te rompo el zagalejo!
+
+Tirinainai tirinai
 En busca de Valentina
 Donde el alisio se esconde
 Donde crece un árbol santo
@@ -359,8 +367,9 @@ Siguiendo al viento la has de encontrar
 En busca de Valentina
 Tirinaina tirinai
 En busca de Valentina
-Tirinaina tirinai"
-Fina Estampa,"Una veredita alegre
+Tirinaina tirinai
+
+Una veredita alegre
 Con luz de luna o de sol
 Tendida como una cinta
 Con lazos de arrebol
@@ -409,8 +418,9 @@ Más hermoso ni más luciera
 Caballero
 Y en tu andar, andar
 Reluce la acera
-Al andar, andar"
-Folías,"Como un duelo de amor
+Al andar, andar
+
+Como un duelo de amor
 Son las folías
 No dejé de cantarlas
 Vida mía
@@ -441,8 +451,9 @@ Vida mía
 Con ellas alumbré
 La luz del día
 Porque aprendí a quererte
-Con las folías"
-Fuerteventura / La rosa de los vientos,"Isla de Fuerteventura
+Con las folías
+
+Isla de Fuerteventura
 Isla donde nací yo
 Tierra de gofio y jareas
 Y del buen mojo picón
@@ -507,8 +518,9 @@ Ay fuerteventura, rosa de los vientos
 Ay fuerteventura, rosa de los vientos
 Eres la fortuna de los majoreros
 Ay fuerteventura, rosa de los vientos
-Eres la fortuna de los majoreros"
-Gomera,"Súbete al monte más alto
+Eres la fortuna de los majoreros
+
+Súbete al monte más alto
 Silba con todas tus fuerzas
 Acércate hacia la infancia
 A ver si el eco recuerda
@@ -518,9 +530,9 @@ Silba, silba sin descanso
 Hasta llamar a la puerta
 De los que en lucha cayeron
 Con la rebeldía a cuestas
-Sílbame el ""garajonay""
+Sílbame el "garajonay"
 Que va siempre sin pareja
-Bailando el ""Santo Domingo""
+Bailando el "Santo Domingo"
 Camino de las estrellas
 Sílbame la sal y el agua
 Sílbame el pan y las penas
@@ -536,7 +548,7 @@ Los caballitos de caña
 Con sus bridas y cernejas
 El croar de los barrancos
 Y las palmas guaraperas
-Sílbame el ""garajonay""
+Sílbame el "garajonay"
 Que va siempre sin pareja
 Cierto que no morirás
 Mas si algún día murieras
@@ -545,8 +557,9 @@ Y silbando pide cuentas
 De por qué te condenaron
 A soledades perpetuas
 Ahora silba más hondo
-Silba más alto y sin tregua"
-Gran Canaria,"Para saber que te llevo
+Silba más alto y sin tregua
+
+Para saber que te llevo
 En el costado clavada
 No has de leerme la mano
 Ha de bastar mi palabra
@@ -587,8 +600,9 @@ Ha de bastar mi palabra
 Mas si la quieres leer
 Verás tan sólo en sus rayas
 Los caminos de una isla
-Que se llama Gran Canaria…"
-Isa de salón,"Dime, niña bonita
+Que se llama Gran Canaria…
+
+Dime, niña bonita
 Si esta coplita
 Tiene valor
 No me lo diga inocente
@@ -605,8 +619,9 @@ Es un castigo que da el demonio
 Si tu marido te pega
 No te debes de preocupar
 Es señal de que te quiere
-De que te quiere matar"
-Juan El Nuestro,"""Yo trabajé desde niño
+De que te quiere matar
+
+"Yo trabajé desde niño
 La miseria fue mi escuela
 Soñé cuando todos duermen
 Lloré cuando todos juegan
@@ -615,7 +630,7 @@ Hallé rencor a mi puerta
 Mi juventud fue la huida
 La libertad mi cadera;
 Mi vida, evitar la muerte
-Mi paz, evitar la guerra""
+Mi paz, evitar la guerra"
 Una idea tan sencilla
 Levanta muros de piedra
 Manos que arañan a Juan
@@ -629,8 +644,9 @@ Y los hombres de La Isleta
 No lo llaman Juan García
 Ni lo llaman Corredera
 Juan el nuestro le han nombrado
-Y Juan el nuestro se queda"
-La Rosa de los Vientos,"Cultivo una rosa blanca en el jable del vachuelo
+Y Juan el nuestro se queda
+
+Cultivo una rosa blanca en el jable del vachuelo
 Cultivo una rosa blanca en el jable del vachuelo
 Entre tarajal y aulaga en una gavia que tengo
 Entre tarajal y aulaga en una gavia que tengo
@@ -666,8 +682,9 @@ Ay fuerteventura, rosa de los vientos
 Ay fuerteventura, rosa de los vientos
 Eres la fortuna de los majoreros
 Ay fuerteventura, rosa de los vientos
-Eres la fortuna de los majoreros"
-Niña Candela,"Si me regalas un beso te inventaré una canción
+Eres la fortuna de los majoreros
+
+Si me regalas un beso te inventaré una canción
 Un mundo lleno de cuentos donde quepamos las dos
 Te llevaré hasta la luna, entre nubes de algodón
 Yo seré tu caballero, te salvaré del dragón
@@ -678,8 +695,9 @@ Ye ye yé, niña Candela, eres la brasa enciende la hoguera, eres la llama fuego
 Un pive pide en la calle, afuera apreta el calor
 La tele vocea noticias de guerra y corrupción
 Pero tú sigues jugando floreciendo en tu rincón, dando sentido a mi vida, librándome del terror. ¡Ay!
-Ye ye yé, niña Candela, eres la brasa enciende la hoguera, eres la llama fuego que quema, besa y consume mi corazón. ¡Ay, ay, ay!, niña Candela, eres la l..."
-Parientes Ontológicos,"Un perro de la calle
+Ye ye yé, niña Candela, eres la brasa enciende la hoguera, eres la llama fuego que quema, besa y consume mi corazón. ¡Ay, ay, ay!, niña Candela, eres la l...
+
+Un perro de la calle
 Fiel amigo del viento y las esquinas
 Me acompañaba a veces
 A mi rincón de párvulo
@@ -699,8 +717,9 @@ Resonando de atrás
 De las cureñas del azar del agua
 Ritmos de la igualdad, fraternizábamos
 Un perro de la calle y un hombre sin fronteras
-Dos cuentagotas de la eternidad"
-Ramito de violetas,"Era feliz en su matrimonio
+Dos cuentagotas de la eternidad
+
+Era feliz en su matrimonio
 Aunque su marido era el mismo demonio
 Tenía el hombre un poco de mal genio
 Que ella se quejaba de que nunca fue tierno
@@ -745,8 +764,9 @@ Mira a su marido y luego calla
 ¿Quién le mandaba flores por primavera?
 ¿Quién cada nueve de noviembre
 Como siempre sin tarjeta
-Le mandaba un ramito de violetas?"
-Sombra del Nublo,"Sombra del Nublo
+Le mandaba un ramito de violetas?
+
+Sombra del Nublo
 Riscales los de Tejeda
 Cadenas de mis montañas
 Montañas las de mi tierra
@@ -773,8 +793,9 @@ Si a tu sombra yo he nacido
 Quiero vivir a tu sombra
 Y a tu sombra quiero amar
 El alma eres de mi tierra
-Fuego y lava junto al mar"
-Somos costeros,"Somos costeros arriando velas
+Fuego y lava junto al mar
+
+Somos costeros arriando velas
 Largando al viento la rumantela
 Echa ron ventorrillero
 Turronera, pon turrón
@@ -813,8 +834,9 @@ Turronera, pon turrón..
 Hoy no cantamos ¡Sardinas frescas!
 Hoy pregonamos ¡Viva la fiesta!
 Echa ron ventorrillero
-Turronera, pon turrón"
-Sulema,"Cuando Sulema camina
+Turronera, pon turrón
+
+Cuando Sulema camina
 El polvo de sus sandalias...
 Cuando Sulema camina
 El polvo de sus sandalias
@@ -883,8 +905,9 @@ Sale La Luna en el Sahara...
 Va floreciendo La Libertad
 Sale La Luna en el Sahara...
 Va floreciendo La Libertad
-Sale La Luna en el Sahara"
-Tajaraste,"Cantemos todos unidos
+Sale La Luna en el Sahara
+
+Cantemos todos unidos
 Que el cantar es cosa buena
 Ayúdame compañero
 Porque el canto ya no suena
@@ -935,5 +958,7 @@ En el cielo cuando vuela
 Cantemos todos unidos
 Que el cantar es cosa buena
 Ayúdame compañero
-Porque el canto ya no suena"
-Tanganillo,
+Porque el canto ya no suena
+
+
+
