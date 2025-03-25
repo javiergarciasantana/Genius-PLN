@@ -19,6 +19,7 @@ genius.retries = 3
 
 # Elegir el corpus a incrementar
 option = input("Selecciona el corpus a incrementar (0: tradicional, 1: nueva): ")
+corpus = ""
 if option == "0":
     corpus = "tradicional"
 elif option == "1":
@@ -39,7 +40,7 @@ for song in artist.songs:
 
 # Introducir todas en un solo archivo de texto con doble salto de línea
 # Abrir el archivo en modo append para no sobreescribir
-with open("../${corpus}_lyrics.txt", "a", encoding="utf-8") as f:
+with open(f"../{corpus}_lyrics.txt", "a", encoding="utf-8") as f:
     for song in songs:
         f.write(song + "\n\n")
-print("Letras guardadas en ${corpus}_lyrics.txt")
+print(f"Letras guardadas en {corpus}_lyrics.txt")
