@@ -13,6 +13,7 @@ genius.excluded_terms = [
     "(Live)",
     "(Mixed)",
     "(FreeStyle)",
+    "(Original Version)",
 ]  # Exclude songs with these words in their title
 genius.sleep_time = 1
 genius.retries = 3
@@ -28,19 +29,37 @@ else:
     raise ValueError("Opción no válida")
 
 # Elegir el artista a descargar
-artist_name = input("Introduce el nombre del artista: ")
-artist = genius.search_artist(artist_name, sort="title")
-print(artist.songs)
+new_artist_names = ["Quevedo", "La Pantera", "Ptazeta", "Adexe y Nau", "Maikel Delacalle",
+                    "Bejo", "Sara Socas", "Don Patricio", "Cruz Cafuné", "El Ima", "Juseph",
+                    "Danny Romero", "Agoney"]
 
-songs = []
-# Descargar las letras de las canciones en texto plano
-for song in artist.songs:
-    print(f"Descargando letra de {song.title}...")
-    songs.append(song.lyrics)
+old_artist_names = ["Mestisay"]
 
-# Introducir todas en un solo archivo de texto con doble salto de línea
-# Abrir el archivo en modo append para no sobreescribir
-with open(f"../{corpus}_lyrics.txt", "a", encoding="utf-8") as f:
-    for song in songs:
-        f.write(song + "\n\n")
-print(f"Letras guardadas en {corpus}_lyrics.txt")
+def downloadSong(option) -> None:
+    """
+      Descarga las letras de las canciones de los artistas seleccionados y las guarda en un archivo de texto.
+
+      Args:
+        option (str): Opción seleccionada por el usuario.
+
+      Returns:
+        None
+    """
+    songs = []
+    artists_names = old_artist_names if option == "0" else new_artist_names
+    for artist in artists_names:
+        artist = genius.search_artist(artist, sort="title")
+        print(artist.songs)
+        # Descargar las letras de las canciones en texto plano
+        for song in artist.songs:
+            print(f"Descargando letra de {song.title}...")
+            songs.append(song.lyrics)
+    
+    # Introducir todas en un solo archivo de texto con doble salto de línea
+    # Abrir el archivo en modo append para no sobreescribir
+    with open(f"../{corpus}_lyrics.txt", "a", encoding="utf-8") as f:
+        for song in songs:
+            f.write(song + "\n\n")
+    print(f"Letras guardadas en {corpus}_lyrics.txt")
+
+downloadSong(option)
