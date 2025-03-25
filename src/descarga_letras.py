@@ -17,7 +17,18 @@ genius.excluded_terms = [
 genius.sleep_time = 1
 genius.retries = 3
 
-artist = genius.search_artist("Mestisay", sort="title")
+# Elegir el corpus a incrementar
+option = input("Selecciona el corpus a incrementar (0: tradicional, 1: nueva): ")
+if option == "0":
+    corpus = "tradicional"
+elif option == "1":
+    corpus = "nueva"
+else:
+    raise ValueError("Opción no válida")
+
+# Elegir el artista a descargar
+artist_name = input("Introduce el nombre del artista: ")
+artist = genius.search_artist(artist_name, sort="title")
 print(artist.songs)
 
 songs = []
@@ -27,7 +38,8 @@ for song in artist.songs:
     songs.append(song.lyrics)
 
 # Introducir todas en un solo archivo de texto con doble salto de línea
-with open("mestisay_lyrics.txt", "w", encoding="utf-8") as f:
+# Abrir el archivo en modo append para no sobreescribir
+with open("../${corpus}_lyrics.txt", "a", encoding="utf-8") as f:
     for song in songs:
         f.write(song + "\n\n")
-print("Letras guardadas en mestisay_lyrics.txt")
+print("Letras guardadas en ${corpus}_lyrics.txt")
