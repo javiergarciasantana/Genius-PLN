@@ -1,6 +1,6 @@
 from lyricsgenius import Genius
 
-API_KEY = "uFdeYfD4xrNkJcT10dK429ahdfmrJ1yO-bmij0eIU8LHs4xaaHT64IyKCHJ9CISa"
+API_KEY = "KamY5JmBdXNJvEGHF5yYdMPcrVHhifZYggEE29HG69MmslvDJsa8Bf5dtCAnytb_"
 genius = Genius(API_KEY)
 
 genius.verbose = True  # Turn off status messages
@@ -15,7 +15,7 @@ genius.excluded_terms = [
     "(FreeStyle)",
     "(Original Version)",
 ]  # Exclude songs with these words in their title
-genius.sleep_time = 1
+genius.sleep_time = 7  # Wait 7 seconds between requests
 genius.retries = 3
 
 # Elegir el corpus a incrementar
@@ -33,7 +33,9 @@ new_artist_names = ["Quevedo", "La Pantera", "Ptazeta", "Adexe y Nau", "Maikel D
                     "Bejo", "Sara Socas", "Don Patricio", "Cruz Cafuné", "El Ima", "Juseph",
                     "Danny Romero", "Agoney"]
 
-old_artist_names = ["Mestisay"]
+old_artist_names = ["Taburiente",
+                    "Los Faycanes", "Añoranza", "Benito Cabrera", "Guadarfía",
+                    "Los Huaracheros", "José Veléz"]
 
 def downloadSong(option) -> None:
     """
@@ -49,17 +51,21 @@ def downloadSong(option) -> None:
     artists_names = old_artist_names if option == "0" else new_artist_names
     for artist in artists_names:
         artist = genius.search_artist(artist, sort="title")
+        if artist is None:
+          print(f"Error: No se encontraron resultados para {artist}")
+          continue  # Skip this iteration if no artist was found
+
         print(artist.songs)
         # Descargar las letras de las canciones en texto plano
         for song in artist.songs:
             print(f"Descargando letra de {song.title}...")
             songs.append(song.lyrics)
+        with open(f"../{corpus}_lyrics.txt", "a", encoding="utf-8") as f:
+            for song in songs:
+                f.write(song + "\n\n")
+        print(f"Letras guardadas en {corpus}_lyrics.txt")
     
     # Introducir todas en un solo archivo de texto con doble salto de línea
     # Abrir el archivo en modo append para no sobreescribir
-    with open(f"../{corpus}_lyrics.txt", "a", encoding="utf-8") as f:
-        for song in songs:
-            f.write(song + "\n\n")
-    print(f"Letras guardadas en {corpus}_lyrics.txt")
 
 downloadSong(option)
