@@ -311,7 +311,7 @@ def compute_perplexity(test_sentences, cpd, n, vocab):
 if __name__ == "__main__":
 
     # Paso 1: Leer y tokenizar el corpus
-    corpus = read_and_tokenize("./corpus/test.txt")
+    corpus = read_and_tokenize("./tradicional_lyrics.txt")
 
     do_KenLM = True
     if do_KenLM:
