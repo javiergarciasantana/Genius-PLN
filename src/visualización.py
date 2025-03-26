@@ -73,7 +73,7 @@ def analizar_texto(texto):
 
 
 #  Ruta del archivo a leer
-ruta_archivo = "./mestisay_lyrics.txt"
+ruta_archivo = "../corpus/tradicional_lyrics.txt"
 
 #  Ejecutar análisis
 texto = cargar_texto(ruta_archivo)
