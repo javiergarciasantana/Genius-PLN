@@ -27,16 +27,26 @@ def read_and_tokenize(filename) -> list:
     """
     sentences = []
 
-    with open(filename, "r", encoding="utf-8") as f:
-        for line in f:
-            # Eliminar espacios en blanco al inicio y al final de la línea
-            line = line.strip()
-            # Dividir la línea en palabras
-            words = line.split()
-            # Agregar el token 'EOL' al final de cada oración
-            words.append("EOL")
-            # Agregar la lista de palabras a la lista de oraciones
-            sentences.append(words)
+    with open(filename, "r", encoding="utf-8-sig") as f:
+        # Read the entire file content
+        content = f.read()
+        # Split the content into sentences using two consecutive newlines (\n\n)
+        raw_sentences = content.split("###")
+        # Process each sentence
+        for raw_sentence in raw_sentences:
+            # Replace remaining newlines within the sentence with "EOL"
+            processed_sentence = raw_sentence.replace("\n", " EOL ").strip()
+            # Split the sentence into words
+            tokens = processed_sentence.split()
+            # Remove the first "EOL" if it exists
+            if tokens and tokens[0] == "EOL":
+                tokens.pop(0)
+            # Remove the last "EOL" if it exists
+            if tokens and tokens[-1] == "EOL":
+                tokens.pop()
+            # Append the processed sentence if it's not empty
+            if tokens:  # Ignore empty sentences
+                sentences.append(tokens)
 
     return sentences
 
@@ -268,8 +278,11 @@ def split_corpus(corpus, train_ratio=0.8):
     Returns:
         tuple: Una tupla que contiene el corpus de entrenamiento y el corpus de prueba.
     """
+    split_index = int(len(corpus) * train_ratio)
+    train_corpus = corpus[:split_index]
+    test_corpus = corpus[split_index:]
 
-    # return train_corpus, test_corpus
+    return train_corpus, test_corpus
 
 
 def compute_perplexity(test_sentences, cpd, n, vocab):
@@ -285,19 +298,22 @@ def compute_perplexity(test_sentences, cpd, n, vocab):
     Returns:
         float: La perplejidad del modelo.
     """
+    total_log_prob = 0.0
+    for sentence in test_sentences:
+        total_log_prob += sentence_logprobability(sentence, cpd, n, vocab)
 
-    # return perplexity
+    # Calcular la perplejidad como la probabilidad media inversa de las oraciones
+    perplexity = math.exp(-total_log_prob / sum(len(s) for s in test_sentences))
+    return perplexity
 
 
 # Ejecución Principal
 if __name__ == "__main__":
-    # Establecer el directorio de trabajo
-    os.chdir("G:\\Mi unidad\\24-25\\docencia\\iaa\\practica\\ngram")
 
     # Paso 1: Leer y tokenizar el corpus
-    corpus = read_and_tokenize("all_lyrics1.txt")
+    corpus = read_and_tokenize("./tradicional_lyrics.txt")
 
-    do_KenLM = False
+    do_KenLM = True
     if do_KenLM:
         write_sentences_to_file(corpus, "kenlm1.txt")
 
@@ -308,10 +324,10 @@ if __name__ == "__main__":
     prepared_corpus, vocab = prepare_corpus(corpus, n, unk_threshold)
 
     # Paso 3: Dividir el corpus en entrenamiento y prueba
-    do_split_corpus = False
+    do_split_corpus = True
     if do_split_corpus:
         print("Dividiendo el corpus en entrenamiento y prueba...")
-        train_corpus, test_corpus = split_corpus(prepared_corpus, train_ratio=0.8)
+        train_corpus, test_corpus = split_corpus(prepared_corpus, train_ratio=0.6)
     else:
         train_corpus = test_corpus = prepared_corpus
 
