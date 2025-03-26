@@ -2,4 +2,8 @@ en un plato de trigo
 ###
 tres tristes tigres
 ###
+tristes tigres
+###
 comen trigo
+###
+tigres comen trigo
