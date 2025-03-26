@@ -33,7 +33,7 @@ new_artist_names = ["Quevedo", "La Pantera", "Ptazeta", "Adexe y Nau", "Maikel D
                     "Bejo", "Sara Socas", "Don Patricio", "Cruz Cafuné", "El Ima", "Juseph",
                     "Danny Romero", "Agoney"]
 
-old_artist_names = ["Taburiente",
+old_artist_names = ["Mestisay", "Los Gofiones", "Los Sabandeños", "Taburiente",
                     "Los Faycanes", "Añoranza", "Benito Cabrera", "Guadarfía",
                     "Los Huaracheros", "José Veléz"]
 
