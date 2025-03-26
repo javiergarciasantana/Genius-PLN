@@ -62,7 +62,7 @@ def downloadSong(option) -> None:
             songs.append(song.lyrics)
         with open(f"../{corpus}_lyrics.txt", "a", encoding="utf-8") as f:
             for song in songs:
-                f.write(song + "#" * 3 + "\n")
+                f.write(song + "\n" + "#" * 3 + "\n")
 
         print(f"Letras guardadas en {corpus}_lyrics.txt")
     
