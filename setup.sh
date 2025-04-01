@@ -22,6 +22,11 @@ if [ -f "requirements.txt" ]; then
     pip install -r requirements.txt
     echo "Insalling PyTorch..."
     pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+    echo "Insalling scikit-learn..."
+    pip install scikit-learn
+    echo "Insalling nltk..."
+    pip install nltk
+
 else
     echo "No requirements.txt file found."
 fi
