@@ -4,8 +4,8 @@ import sys
 import numpy as np
 import os
 
-sys.path.append(r"G:\Mi unidad\24-25\docencia\iaa\practica\auxpy")
-import auxfunctions as auxF 
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import auxfunctions as auxF
 
 # Define a custom callback to log the loss
 
@@ -65,7 +65,7 @@ def load_model(file_path):
 
 if __name__ == "__main__":
     # Configuración inicial
-    os.chdir(r"G:\Mi unidad\24-25\docencia\iaa\practica\wordvec")
+  
     model_file = "word2vec.model"
     output_file = "most_similar_words_gensim.txt"
 
@@ -73,11 +73,11 @@ if __name__ == "__main__":
     if(simpletext):
         w=3
         minc=1
-        file=r"G:\Mi unidad\24-25\docencia\iaa\practica\wordvec\simpletext.txt"
+        file=r"../corpus/simpletext.txt"
     else:           #False para generar el fichero grande
         w=3
         minc=7
-        file=r"G:\Mi unidad\24-25\docencia\iaa\practica\all_lyrics1.txt"
+        file=r"../corpus/tradicional_lyrics.txt"
 
     # Paso 1: Cargar y preprocesar el corpus
     print("Cargando y preprocesando el corpus...")
