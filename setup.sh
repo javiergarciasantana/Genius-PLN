@@ -20,6 +20,8 @@ if [ -f "requirements.txt" ]; then
     echo "Installing dependencies from requirements.txt..."
     pip install --upgrade pip
     pip install -r requirements.txt
+    echo "Insalling PyTorch..."
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 else
     echo "No requirements.txt file found."
 fi
