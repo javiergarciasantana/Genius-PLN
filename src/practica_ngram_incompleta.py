@@ -311,11 +311,11 @@ def compute_perplexity(test_sentences, cpd, n, vocab):
 if __name__ == "__main__":
 
     # Paso 1: Leer y tokenizar el corpus
-    corpus = read_and_tokenize("../corpus/tradicional_lyrics.txt")
+    corpus = read_and_tokenize("../corpus/nueva_lyrics.txt")
 
     do_KenLM = True
     if do_KenLM:
-        write_sentences_to_file(corpus, "output_tradicional.txt")
+        write_sentences_to_file(corpus, "output_nueva.txt")
 
     # Paso 2: Preparar el corpus y el vocabulario
     n = 2 # Orden del modelo de n-gramas

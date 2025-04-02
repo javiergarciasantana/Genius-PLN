@@ -1,6 +1,6 @@
 from lyricsgenius import Genius
 
-API_KEY = "KamY5JmBdXNJvEGHF5yYdMPcrVHhifZYggEE29HG69MmslvDJsa8Bf5dtCAnytb_"
+API_KEY = "ZaKTY_An-CIrpig3OjDEYKYGE8f1MLnkf0rljTWjdU402o1YMN8rHIOnPUEELQrk"
 genius = Genius(API_KEY)
 
 genius.verbose = True  # Turn off status messages
@@ -66,7 +66,4 @@ def downloadSong(option) -> None:
 
         print(f"Letras guardadas en {corpus}_lyrics.txt")
     
-    # Introducir todas en un solo archivo de texto con doble salto de línea
-    # Abrir el archivo en modo append para no sobreescribir
-
 downloadSong(option)
