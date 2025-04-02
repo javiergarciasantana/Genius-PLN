@@ -6,10 +6,10 @@ archivo_limpio = "../corpus/nueva_lyrics_limpio.txt"
 
 # Patrón para detectar líneas no deseadas
 patrones_a_eliminar = [
-    r"^\s*\d+\s*Contributors.*?\n",  # Ejemplo: "9 ContributorsTranslationsEnglish14 FEBREROS Lyrics"
-    r"^\s*Translations.*?\n",
-    r"^\s*\d+\s*Lyrics.*?\n",
-    r"^\s*\d+\s*FEBRERO.*?\n",
+    r"^\s*\d*\s*Contributors.*?\n",  # "9 ContributorsDonde Están Lyrics"
+    r"^\s*Translations.*?\n",        # "TranslationsEnglish"
+    r"^\s*\d*\s*Lyrics.*?\n",        # "1 ContributorDonde Están Lyrics"
+    r"^\s*\d*\s*[A-Za-z]+ FEBRERO.*?\n",  # "14 FEBRERO"
 ]
 
 # Leer el archivo original y limpiar líneas no deseadas

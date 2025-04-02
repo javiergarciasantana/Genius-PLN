@@ -4,9 +4,7 @@ API_KEY = "ZaKTY_An-CIrpig3OjDEYKYGE8f1MLnkf0rljTWjdU402o1YMN8rHIOnPUEELQrk"
 genius = Genius(API_KEY)
 
 genius.verbose = True  # Turn off status messages
-genius.remove_section_headers = (
-    True  # Remove section headers (e.g. [Chorus]) from lyrics when searching
-)
+genius.remove_section_headers = True  # Remove section headers (e.g. [Chorus]) from lyrics when searching
 genius.skip_non_songs = True  # Include hits thought to be non-songs (e.g. track lists)
 genius.excluded_terms = [
     "(Remix)",
@@ -15,7 +13,7 @@ genius.excluded_terms = [
     "(FreeStyle)",
     "(Original Version)",
 ]  # Exclude songs with these words in their title
-genius.sleep_time = 7  # Wait 7 seconds between requests
+genius.sleep_time = 1  # Wait 7 seconds between requests
 genius.retries = 3
 
 # Elegir el corpus a incrementar
