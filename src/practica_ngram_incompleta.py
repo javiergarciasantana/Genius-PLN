@@ -318,7 +318,7 @@ if __name__ == "__main__":
         write_sentences_to_file(corpus, "output_nueva.txt")
 
     # Paso 2: Preparar el corpus y el vocabulario
-    n = 2 # Orden del modelo de n-gramas
+    n = 2  # Orden del modelo de n-gramas
     unk_threshold = 0
     print("Preparando el corpus...")
     prepared_corpus, vocab = prepare_corpus(corpus, n, unk_threshold)

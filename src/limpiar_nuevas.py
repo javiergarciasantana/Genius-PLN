@@ -12,7 +12,9 @@ with open(archivo_original, "r", encoding="utf-8") as f:
     lineas = f.readlines()
 
 # Filtrar las líneas eliminando completamente las que coincidan
-lineas_limpias = [linea for linea in lineas if not patron_contributors.match(linea.strip())]
+lineas_limpias = [
+    linea for linea in lineas if not patron_contributors.match(linea.strip())
+]
 
 # Guardar el resultado sin líneas vacías
 with open(archivo_limpio, "w", encoding="utf-8") as f:
