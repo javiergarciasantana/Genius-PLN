@@ -85,7 +85,7 @@ if __name__ == "__main__":
     else:  # False para generar el fichero grande
         w = 3
         minc = 7
-        file = r"../corpus/tradicional_lyrics.txt"
+        file = r"../corpus/nueva_lyrics_limpio.txt"
 
     # Paso 1: Cargar y preprocesar el corpus
     print("Cargando y preprocesando el corpus...")
