@@ -4,6 +4,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 import math
 
+
 # ----------------------------- Vocabulary Management -----------------------------
 class Vocabulary:
     def __init__(self):
@@ -23,6 +24,7 @@ class Vocabulary:
     def decode(self, indices):
         return [self.idx_to_token[idx] for idx in indices]
 
+
 # ----------------------------- BengioNN Model Definition -----------------------------
 class BengioNN(nn.Module):
     def __init__(self, vocab_size, context_size, embed_size, hidden_dim):
@@ -39,6 +41,7 @@ class BengioNN(nn.Module):
         logits = self.fc2(hidden)  # Shape: [batch_size, 1]
         return logits
 
+
 # ----------------------------- Dataset Handling -----------------------------
 def read_and_tokenize(filename):
     """
@@ -49,25 +52,28 @@ def read_and_tokenize(filename):
         list: A list of sentences, where each sentence is a list of words.
     """
     sentences = []
-    with open(filename, 'r', encoding='utf-8-sig') as f:
+    with open(filename, "r", encoding="utf-8-sig") as f:
         content = f.read()
-        raw_sentences = content.split('\n\n')  # Split by double newlines
+        raw_sentences = content.split("\n\n")  # Split by double newlines
         for raw_sentence in raw_sentences:
-            tokens = raw_sentence.replace('\n', ' ').strip().split()
+            tokens = raw_sentence.replace("\n", " ").strip().split()
             if tokens:
                 sentences.append(tokens)
     return sentences
+
 
 class SentenceDataset(Dataset):
     def __init__(self, sentences, labels, vocab, context_size):
         self.vocab = vocab
         self.context_size = context_size
         self.data = []
-        self.pad_idx = vocab.token_to_idx['<PAD>']
+        self.pad_idx = vocab.token_to_idx["<PAD>"]
         for sentence, label in zip(sentences, labels):
             encoded_sentence = vocab.encode(sentence)
             if len(encoded_sentence) < context_size:
-                encoded_sentence += [self.pad_idx] * (context_size - len(encoded_sentence))
+                encoded_sentence += [self.pad_idx] * (
+                    context_size - len(encoded_sentence)
+                )
             else:
                 encoded_sentence = encoded_sentence[:context_size]
             self.data.append((encoded_sentence, label))
@@ -79,14 +85,16 @@ class SentenceDataset(Dataset):
         inputs, label = self.data[idx]
         return torch.tensor(inputs), torch.tensor(label)
 
+
 def collate_fn(batch):
     inputs, labels = zip(*batch)
     inputs = torch.nn.utils.rnn.pad_sequence(inputs, batch_first=True, padding_value=0)
     labels = torch.tensor(labels)
     return inputs, labels
 
+
 # ----------------------------- Training Function -----------------------------
-def train_model(model, data_loader, num_epochs, learning_rate, device='cpu'):
+def train_model(model, data_loader, num_epochs, learning_rate, device="cpu"):
     model.to(device)
     model.train()
     criterion = nn.BCEWithLogitsLoss()
@@ -103,12 +111,15 @@ def train_model(model, data_loader, num_epochs, learning_rate, device='cpu'):
             optimizer.step()
             total_loss += loss.item()
             if batch_idx % 10 == 0:
-                print(f"Epoch [{epoch+1}/{num_epochs}], Batch [{batch_idx+1}/{total_batches}], Loss: {loss.item():.4f}")
+                print(
+                    f"Epoch [{epoch+1}/{num_epochs}], Batch [{batch_idx+1}/{total_batches}], Loss: {loss.item():.4f}"
+                )
         avg_loss = total_loss / total_batches
         print(f"Epoch [{epoch+1}/{num_epochs}] completed, Average Loss: {avg_loss:.4f}")
 
+
 # ----------------------------- Evaluation Function -----------------------------
-def evaluate_model(model, data_loader, device='cpu'):
+def evaluate_model(model, data_loader, device="cpu"):
     model.to(device)
     model.eval()
     correct = 0
@@ -123,25 +134,29 @@ def evaluate_model(model, data_loader, device='cpu'):
     accuracy = correct / total
     return accuracy
 
+
 # ----------------------------- Main Script -----------------------------
 if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # Step 1: Read and tokenize sentences from two files
-    file1 = r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics1.txt"
-    file2 = r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics2.txt"
+    file1 = (
+        r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics1.txt"
+    )
+    file2 = (
+        r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics2.txt"
+    )
     sentences_class0 = read_and_tokenize(file1)
     sentences_class1 = read_and_tokenize(file2)
 
-
-    sentences_class0=sentences_class0[0:30]
-    sentences_class0=sentences_class1[0:30]
+    sentences_class0 = sentences_class0[0:30]
+    sentences_class0 = sentences_class1[0:30]
     # Step 2: Build vocabulary
     vocab = Vocabulary()
     for sentence in sentences_class0 + sentences_class1:
         for token in sentence:
             vocab.add_token(token)
-    vocab.add_token('<PAD>')  # Add padding token
+    vocab.add_token("<PAD>")  # Add padding token
 
     # Step 3: Assign labels (0 for class 0, 1 for class 1)
     labels_class0 = [0] * len(sentences_class0)
@@ -153,6 +168,7 @@ if __name__ == "__main__":
 
     # Shuffle the combined dataset
     import random
+
     combined = list(zip(sentences, labels))
     random.shuffle(combined)  # Shuffle the combined list
     sentences, labels = zip(*combined)
@@ -169,16 +185,24 @@ if __name__ == "__main__":
     context_size = 30  # Fixed context size
     train_dataset = SentenceDataset(train_sentences, train_labels, vocab, context_size)
     test_dataset = SentenceDataset(test_sentences, test_labels, vocab, context_size)
-    train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True, collate_fn=collate_fn)
-    test_loader = DataLoader(test_dataset, batch_size=128, shuffle=False, collate_fn=collate_fn)
+    train_loader = DataLoader(
+        train_dataset, batch_size=128, shuffle=True, collate_fn=collate_fn
+    )
+    test_loader = DataLoader(
+        test_dataset, batch_size=128, shuffle=False, collate_fn=collate_fn
+    )
 
-    #hasta aqui es lo mismo para ngramas
+    # hasta aqui es lo mismo para ngramas
 
     # Initialize BengioNN model
-    model = BengioNN(vocab_size=vocab.size, context_size=context_size, embed_size=128, hidden_dim=256)
+    model = BengioNN(
+        vocab_size=vocab.size, context_size=context_size, embed_size=128, hidden_dim=256
+    )
 
     # Train the model
-    train_model(model, train_loader, num_epochs=100, learning_rate=0.0001, device=device)
+    train_model(
+        model, train_loader, num_epochs=100, learning_rate=0.0001, device=device
+    )
 
     # Evaluate the model on the test set
     test_accuracy = evaluate_model(model, test_loader, device=device)
