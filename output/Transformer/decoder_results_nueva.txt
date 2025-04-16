@@ -1,0 +1,120 @@
+
+🔧 Testing: CONTEXT=32, BATCH=32, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 6.5851, Perplexity: 724.1964
+Epoch [2/10], Loss: 5.1400, Perplexity: 170.7144
+Epoch [3/10], Loss: 4.0215, Perplexity: 55.7851
+Epoch [4/10], Loss: 3.0098, Perplexity: 20.2825
+Epoch [5/10], Loss: 2.1294, Perplexity: 8.4096
+Epoch [6/10], Loss: 1.4159, Perplexity: 4.1201
+Epoch [7/10], Loss: 0.9074, Perplexity: 2.4779
+Epoch [8/10], Loss: 0.5948, Perplexity: 1.8126
+Epoch [9/10], Loss: 0.4245, Perplexity: 1.5288
+Epoch [10/10], Loss: 0.3279, Perplexity: 1.3881
+📉 Perplexity: 1.1327
+Model saved successfully to saved_models/model_ctx32_bs32_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor 9 ContributorsTranslationsEnglish14 FEBREROS al mes EOL Las mirá' me persiguen EOL Un diablo y todo se fue un himno muy distinta al fin EOL Llevo detrás de mi mente las pintas, pa' cobrar lo digo, después EOL Lo que puede su prisionero EOL Y ahora no me lo pensaré, que e'
+
+🔧 Testing: CONTEXT=32, BATCH=32, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 6.9225, Perplexity: 1014.8553
+Epoch [2/10], Loss: 5.7992, Perplexity: 330.0346
+Epoch [3/10], Loss: 5.0133, Perplexity: 150.4063
+Epoch [4/10], Loss: 4.3670, Perplexity: 78.8068
+Epoch [5/10], Loss: 3.7886, Perplexity: 44.1944
+Epoch [6/10], Loss: 3.2592, Perplexity: 26.0281
+Epoch [7/10], Loss: 2.7866, Perplexity: 16.2264
+Epoch [8/10], Loss: 2.3421, Perplexity: 10.4035
+Epoch [9/10], Loss: 1.9320, Perplexity: 6.9032
+Epoch [10/10], Loss: 1.5632, Perplexity: 4.7742
+📉 Perplexity: 2.5337
+Model saved successfully to saved_models/model_ctx32_bs32_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor 9 siguiente ya yo ya no tengo nuestro EOL Al final me toca EOL La fama nos gusta que lo hicimos (Yeah) EOL Tú sabe' que te hizo ese toto fue hacerte mi mente EOL Tú sabe' que otro el ego nos mata EOL No sé si el Linton escuchando sentimientos
+
+🔧 Testing: CONTEXT=32, BATCH=64, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 6.9171, Perplexity: 1009.3636
+Epoch [2/10], Loss: 5.9116, Perplexity: 369.3113
+Epoch [3/10], Loss: 4.8117, Perplexity: 122.9350
+Epoch [4/10], Loss: 3.8972, Perplexity: 49.2620
+Epoch [5/10], Loss: 3.0983, Perplexity: 22.1603
+Epoch [6/10], Loss: 2.3919, Perplexity: 10.9340
+Epoch [7/10], Loss: 1.8058, Perplexity: 6.0847
+Epoch [8/10], Loss: 1.3175, Perplexity: 3.7340
+Epoch [9/10], Loss: 0.9331, Perplexity: 2.5424
+Epoch [10/10], Loss: 0.6686, Perplexity: 1.9515
+📉 Perplexity: 1.3071
+Model saved successfully to saved_models/model_ctx32_bs64_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor 9 y aún estés EOL Yo decidí volver cuando te vi con él EOL EOL Ahí tú puedes ese man le dolió EOL EOL Pero hace tú vuelva a la mano la luz EOL Pero te necesito que quería nada que se leyó lo único por estar EOL Pero tengo claro
+
+🔧 Testing: CONTEXT=32, BATCH=64, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 7.2990, Perplexity: 1478.8128
+Epoch [2/10], Loss: 6.3670, Perplexity: 582.3007
+Epoch [3/10], Loss: 5.7375, Perplexity: 310.2950
+Epoch [4/10], Loss: 5.0946, Perplexity: 163.1370
+Epoch [5/10], Loss: 4.5663, Perplexity: 96.1843
+Epoch [6/10], Loss: 4.0983, Perplexity: 60.2388
+Epoch [7/10], Loss: 3.6582, Perplexity: 38.7909
+Epoch [8/10], Loss: 3.2459, Perplexity: 25.6841
+Epoch [9/10], Loss: 2.8663, Perplexity: 17.5715
+Epoch [10/10], Loss: 2.5159, Perplexity: 12.3783
+📉 Perplexity: 6.8083
+Model saved successfully to saved_models/model_ctx32_bs64_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor 9 Lyrics EOL Tú me besas, no te sigo (No, no) EOL Y yo no sé si te pongo a ver si está desvelá' EOL Te doy por qué lo que aquí no era un bala perdida EOL Pero sabe' que el monstruo, no me dio por eso me lo nuestro
+
+🔧 Testing: CONTEXT=64, BATCH=32, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 6.9261, Perplexity: 1018.5183
+Epoch [2/10], Loss: 5.9091, Perplexity: 368.3923
+Epoch [3/10], Loss: 4.8855, Perplexity: 132.3616
+Epoch [4/10], Loss: 4.0084, Perplexity: 55.0604
+Epoch [5/10], Loss: 3.2039, Perplexity: 24.6295
+Epoch [6/10], Loss: 2.4888, Perplexity: 12.0465
+Epoch [7/10], Loss: 1.8943, Perplexity: 6.6477
+Epoch [8/10], Loss: 1.3768, Perplexity: 3.9623
+Epoch [9/10], Loss: 0.9693, Perplexity: 2.6362
+Epoch [10/10], Loss: 0.6823, Perplexity: 1.9785
+📉 Perplexity: 1.2897
+Model saved successfully to saved_models/model_ctx64_bs32_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor 9 dice en ti, era entre Quevedo con el Linton, mai EOL De tanto tiempo pasa, tantas cosas que fue una vuelta EOL Y te muerdo tu cama EOL Yo te contesté: "Me quedo" EOL Mi corazón pero EOL Mi vida pa' mi mente necesita un ángel cerca EOL Y mis
+
+🔧 Testing: CONTEXT=64, BATCH=32, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 7.3077, Perplexity: 1491.7552
+Epoch [2/10], Loss: 6.3811, Perplexity: 590.5571
+Epoch [3/10], Loss: 5.7978, Perplexity: 329.5606
+Epoch [4/10], Loss: 5.1420, Perplexity: 171.0629
+Epoch [5/10], Loss: 4.6157, Perplexity: 101.0567
+Epoch [6/10], Loss: 4.1503, Perplexity: 63.4506
+Epoch [7/10], Loss: 3.7330, Perplexity: 41.8059
+Epoch [8/10], Loss: 3.3362, Perplexity: 28.1113
+Epoch [9/10], Loss: 2.9595, Perplexity: 19.2874
+Epoch [10/10], Loss: 2.6015, Perplexity: 13.4835
+📉 Perplexity: 7.4081
+Model saved successfully to saved_models/model_ctx64_bs32_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor LA Lion EOL EOL Quevedo con el sky, yeah EOL EOL Quevedo con otro Quevedo con el sky, yeah EOL En el amanecer EOL Quevedo con el Linton EOL A las luces de sobra en la última vez EOL A veces me sale EOL EOL A mí EOL A veces
+
+🔧 Testing: CONTEXT=64, BATCH=64, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 7.3118, Perplexity: 1497.8016
+Epoch [2/10], Loss: 6.4166, Perplexity: 611.8905
+Epoch [3/10], Loss: 5.8669, Perplexity: 353.1465
+Epoch [4/10], Loss: 5.1399, Perplexity: 170.6997
+Epoch [5/10], Loss: 4.5287, Perplexity: 92.6347
+Epoch [6/10], Loss: 3.9256, Perplexity: 50.6856
+Epoch [7/10], Loss: 3.4023, Perplexity: 30.0344
+Epoch [8/10], Loss: 2.8986, Perplexity: 18.1494
+Epoch [9/10], Loss: 2.4496, Perplexity: 11.5839
+Epoch [10/10], Loss: 2.0501, Perplexity: 7.7689
+📉 Perplexity: 4.1290
+Model saved successfully to saved_models/model_ctx64_bs64_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor 9 Lyrics EOL Ahora tengo claro to' los labios de mí? EOL Y yo es un día por eso me vio ratos, bebé EOL Y yo te fui yo te lo que te echo de mí? EOL Y me da un día te veo un momento ni yo no quiero la
+
+🔧 Testing: CONTEXT=64, BATCH=64, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 7.8779, Perplexity: 2638.2048
+Epoch [2/10], Loss: 6.6457, Perplexity: 769.4535
+Epoch [3/10], Loss: 6.3684, Perplexity: 583.1281
+Epoch [4/10], Loss: 6.0190, Perplexity: 411.1601
+Epoch [5/10], Loss: 5.5485, Perplexity: 256.8406
+Epoch [6/10], Loss: 5.1356, Perplexity: 169.9624
+Epoch [7/10], Loss: 4.7904, Perplexity: 120.3465
+Epoch [8/10], Loss: 4.4689, Perplexity: 87.2586
+Epoch [9/10], Loss: 4.1570, Perplexity: 63.8769
+Epoch [10/10], Loss: 3.8775, Perplexity: 48.3052
+📉 Perplexity: 31.2712
+Model saved successfully to saved_models/model_ctx64_bs64_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor ninguna no me levanto unfollow, yeah) EOL Que te lo nuestro es mami, solo se me va a mí se acerque, la primera EOL No sé si se siente EOL Y tú y me voy a ti EOL Y yo me va a dar la primera 'e mi cabeza no

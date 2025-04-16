@@ -167,7 +167,7 @@ def generate_language_with_top_k_sampling(model, start_text, max_length, k, voca
 # Example usage
 if __name__ == "__main__":
     # Example dataset
-    sentences = sentences = read_and_tokenize(r"../output/tradicional_lyrics.txt")
+    sentences = sentences = read_and_tokenize(r"../corpus/nueva_lyrics_limpio.txt")
     sentences=sentences[1:30]
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -180,13 +180,13 @@ if __name__ == "__main__":
     vocab.add_token('<PAD>')  # Add padding token
 
     # Prepare dataset
-    context_size = 3
+    context_size = 5
     bengio_data = prepare_bengio_dataset(sentences, vocab, context_size=context_size)
     bengio_loader = DataLoader(CustomDataset(bengio_data), batch_size=32, shuffle=True)
 
     # Initialize and train BengioNN
     bengio_nn = BengioNN(vocab_size=vocab.size, embed_size=128, hidden_dim=256, context_size=context_size)
-    train_model(bengio_nn, bengio_loader, vocab, num_epochs=10, learning_rate=0.001, device=device)
+    train_model(bengio_nn, bengio_loader, vocab, num_epochs=15, learning_rate=0.001, device=device)
 
     # Generate text
     start_text = ["La"]

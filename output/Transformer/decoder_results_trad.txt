@@ -1,0 +1,120 @@
+
+🔧 Testing: CONTEXT=32, BATCH=32, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 5.5887, Perplexity: 267.3759
+Epoch [2/10], Loss: 3.0247, Perplexity: 20.5876
+Epoch [3/10], Loss: 1.2927, Perplexity: 3.6427
+Epoch [4/10], Loss: 0.4874, Perplexity: 1.6281
+Epoch [5/10], Loss: 0.2452, Perplexity: 1.2779
+Epoch [6/10], Loss: 0.1681, Perplexity: 1.1830
+Epoch [7/10], Loss: 0.1355, Perplexity: 1.1451
+Epoch [8/10], Loss: 0.1203, Perplexity: 1.1278
+Epoch [9/10], Loss: 0.1081, Perplexity: 1.1142
+Epoch [10/10], Loss: 0.1007, Perplexity: 1.1060
+📉 Perplexity: 1.0672
+Model saved successfully to saved_models/model_ctx32_bs32_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor Bajan la aurora EOL La vida a la vida EOL A la orilla del mar EOL A la orilla del mar EOL Vivo en todos en Atocha 53 EOL Junto a la luna me crié EOL Ayer vi a la orilla del mar jugaba a borrarlas para que me ha sido
+
+🔧 Testing: CONTEXT=32, BATCH=32, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 6.1124, Perplexity: 451.4381
+Epoch [2/10], Loss: 4.3921, Perplexity: 80.8108
+Epoch [3/10], Loss: 3.1572, Perplexity: 23.5056
+Epoch [4/10], Loss: 2.1615, Perplexity: 8.6839
+Epoch [5/10], Loss: 1.3613, Perplexity: 3.9014
+Epoch [6/10], Loss: 0.7914, Perplexity: 2.2064
+Epoch [7/10], Loss: 0.4563, Perplexity: 1.5782
+Epoch [8/10], Loss: 0.2875, Perplexity: 1.3331
+Epoch [9/10], Loss: 0.2057, Perplexity: 1.2284
+Epoch [10/10], Loss: 0.1631, Perplexity: 1.1771
+📉 Perplexity: 1.0768
+Model saved successfully to saved_models/model_ctx32_bs32_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor Bajan la lluvia EOL En las casas de cartón EOL Que lejos pasa la esperanza EOL En los techos de cartón EOL Que va mi gente EOL Para reconstruir primero еstá viven los desechos EOL La Palma, la forma que no importa EOL ¿cuando EOL Habiendo viven mi gente EOL Qué
+
+🔧 Testing: CONTEXT=32, BATCH=64, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 6.2157, Perplexity: 500.5560
+Epoch [2/10], Loss: 4.1285, Perplexity: 62.0836
+Epoch [3/10], Loss: 2.4837, Perplexity: 11.9854
+Epoch [4/10], Loss: 1.3161, Perplexity: 3.7288
+Epoch [5/10], Loss: 0.6409, Perplexity: 1.8982
+Epoch [6/10], Loss: 0.3423, Perplexity: 1.4082
+Epoch [7/10], Loss: 0.2248, Perplexity: 1.2521
+Epoch [8/10], Loss: 0.1740, Perplexity: 1.1900
+Epoch [9/10], Loss: 0.1428, Perplexity: 1.1535
+Epoch [10/10], Loss: 0.1240, Perplexity: 1.1320
+📉 Perplexity: 1.0687
+Model saved successfully to saved_models/model_ctx32_bs64_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor Bajan la cumbre EOL Cumbre de mi Gran Canaria EOL Cumbre de mi gente EOL Cumbre de mi Gran Canaria EOL Sombra del Nublo EOL Altar de mi tierra amada tierra amada EOL amada EOL Hay fuego EOL El sol en tu tierra amada amada amada EOL Hay tierra EOL amada
+
+🔧 Testing: CONTEXT=32, BATCH=64, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 6.6061, Perplexity: 739.5766
+Epoch [2/10], Loss: 5.1946, Perplexity: 180.3019
+Epoch [3/10], Loss: 4.0641, Perplexity: 58.2112
+Epoch [4/10], Loss: 3.1613, Perplexity: 23.6012
+Epoch [5/10], Loss: 2.3890, Perplexity: 10.9022
+Epoch [6/10], Loss: 1.7379, Perplexity: 5.6853
+Epoch [7/10], Loss: 1.2170, Perplexity: 3.3772
+Epoch [8/10], Loss: 0.8310, Perplexity: 2.2957
+Epoch [9/10], Loss: 0.5715, Perplexity: 1.7709
+Epoch [10/10], Loss: 0.3976, Perplexity: 1.4882
+📉 Perplexity: 1.1669
+Model saved successfully to saved_models/model_ctx32_bs64_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor Bajan EOL Su noche en flor de pata EOL Se EOL Se ve bajar la luna EOL Cuando más de tu nombre brotará en el mar EOL A ver EOL El mar te levante al mismo son EOL De una rama está alto EOL De esta tierra que no importa EOL
+
+🔧 Testing: CONTEXT=64, BATCH=32, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 6.1515, Perplexity: 469.4098
+Epoch [2/10], Loss: 4.1184, Perplexity: 61.4594
+Epoch [3/10], Loss: 2.4570, Perplexity: 11.6692
+Epoch [4/10], Loss: 1.2653, Perplexity: 3.5441
+Epoch [5/10], Loss: 0.5912, Perplexity: 1.8061
+Epoch [6/10], Loss: 0.3058, Perplexity: 1.3577
+Epoch [7/10], Loss: 0.1890, Perplexity: 1.2081
+Epoch [8/10], Loss: 0.1378, Perplexity: 1.1478
+Epoch [9/10], Loss: 0.1065, Perplexity: 1.1124
+Epoch [10/10], Loss: 0.0925, Perplexity: 1.0970
+📉 Perplexity: 1.0360
+Model saved successfully to saved_models/model_ctx64_bs32_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor Bajan EOL Que están EOL Con la Tierra toda Argentina EOL La luz de luz de Epina y su garganta EOL Y qué tenderete EOL Los rincones añejos EOL Que es muy poca cosa EOL Las flores EOL Y por el recodo al hombre más camino EOL Qué ejemplo nos destruye
+
+🔧 Testing: CONTEXT=64, BATCH=32, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 6.6129, Perplexity: 744.6192
+Epoch [2/10], Loss: 5.1815, Perplexity: 177.9507
+Epoch [3/10], Loss: 4.0342, Perplexity: 56.4994
+Epoch [4/10], Loss: 3.1169, Perplexity: 22.5761
+Epoch [5/10], Loss: 2.3379, Perplexity: 10.3596
+Epoch [6/10], Loss: 1.6773, Perplexity: 5.3511
+Epoch [7/10], Loss: 1.1490, Perplexity: 3.1552
+Epoch [8/10], Loss: 0.7695, Perplexity: 2.1586
+Epoch [9/10], Loss: 0.5124, Perplexity: 1.6693
+Epoch [10/10], Loss: 0.3514, Perplexity: 1.4211
+📉 Perplexity: 1.1224
+Model saved successfully to saved_models/model_ctx64_bs32_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor Bajan la primavera EOL No hay solo EOL Tú en sus brazos eres la cumbre a la orilla del balcón EOL Allí pondría tu mano EOL pienso aquí EOL Junto a las raíces y yo quiero EOL Es el río de mí sangre en el sur EOL Eh en el alma
+
+🔧 Testing: CONTEXT=64, BATCH=64, EPOCHS=10, LR=0.001
+Epoch [1/10], Loss: 6.6223, Perplexity: 751.6588
+Epoch [2/10], Loss: 5.3837, Perplexity: 217.8161
+Epoch [3/10], Loss: 3.9259, Perplexity: 50.7003
+Epoch [4/10], Loss: 2.7223, Perplexity: 15.2156
+Epoch [5/10], Loss: 1.7822, Perplexity: 5.9428
+Epoch [6/10], Loss: 1.0984, Perplexity: 2.9992
+Epoch [7/10], Loss: 0.6534, Perplexity: 1.9221
+Epoch [8/10], Loss: 0.3981, Perplexity: 1.4890
+Epoch [9/10], Loss: 0.2633, Perplexity: 1.3012
+Epoch [10/10], Loss: 0.1901, Perplexity: 1.2094
+📉 Perplexity: 1.0654
+Model saved successfully to saved_models/model_ctx64_bs64_ep10_lr0.001.pth
+📝 Generated Text: Que es el amor Bajan la cumbre en la acequia EOL Asustando a la acequia EOL Vengan para hermanarse dejando el pan EOL Jardín que cantas en la cumbre al mundo EOL Cuando Sulema reza en las penas será el rí­o y bonita EOL Llevando al mundo juntos seamos libres de amor vez mundo EOL
+
+🔧 Testing: CONTEXT=64, BATCH=64, EPOCHS=10, LR=0.0005
+Epoch [1/10], Loss: 7.0173, Perplexity: 1115.7945
+Epoch [2/10], Loss: 5.9727, Perplexity: 392.5721
+Epoch [3/10], Loss: 5.0874, Perplexity: 161.9740
+Epoch [4/10], Loss: 4.3241, Perplexity: 75.4976
+Epoch [5/10], Loss: 3.6715, Perplexity: 39.3106
+Epoch [6/10], Loss: 3.0872, Perplexity: 21.9163
+Epoch [7/10], Loss: 2.5562, Perplexity: 12.8870
+Epoch [8/10], Loss: 2.0792, Perplexity: 7.9980
+Epoch [9/10], Loss: 1.6593, Perplexity: 5.2555
+Epoch [10/10], Loss: 1.2985, Perplexity: 3.6639
+📉 Perplexity: 2.1880
+Model saved successfully to saved_models/model_ctx64_bs64_ep10_lr0.0005.pth
+📝 Generated Text: Que es el amor Bajan un verso EOL Todas las esquinas EOL Que la imaginación de los ladridos de las esquinas EOL La siembran con los pueblos de las esquinas del frío EOL Por la cachimba EOL Por la mirada EOL Que viene de los techos de amor EOL Ay con los vientos EOL Ay
