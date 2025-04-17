@@ -4,6 +4,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 import math
 
+
 # ----------------------------- Vocabulary Management -----------------------------
 class Vocabulary:
     def __init__(self):
@@ -141,8 +142,12 @@ if __name__ == "__main__":
     print(f"Using device: {device}")
 
     # Step 1: Read and tokenize sentences from two files
-    file1 = r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics1.txt"
-    file2 = r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics2.txt"
+    file1 = (
+        r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics1.txt"
+    )
+    file2 = (
+        r"G:\Mi unidad\24-25\docencia\iaa\practica\alltoghether\content\all_lyrics2.txt"
+    )
     sentences_class0 = read_and_tokenize(file1)
     sentences_class1 = read_and_tokenize(file2)
 

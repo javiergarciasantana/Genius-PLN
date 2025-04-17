@@ -184,7 +184,7 @@ def generate_language_with_top_k_sampling(
 if __name__ == "__main__":
     # Example dataset
     sentences = sentences = read_and_tokenize(r"../output/tradicional_lyrics.txt")
-    sentences=sentences[1:30]
+    sentences = sentences[1:30]
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -201,8 +201,17 @@ if __name__ == "__main__":
     bengio_loader = DataLoader(CustomDataset(bengio_data), batch_size=32, shuffle=True)
 
     # Initialize and train BengioNN
-    bengio_nn = BengioNN(vocab_size=vocab.size, embed_size=128, hidden_dim=256, context_size=context_size)
-    train_model(bengio_nn, bengio_loader, vocab, num_epochs=10, learning_rate=0.001, device=device)
+    bengio_nn = BengioNN(
+        vocab_size=vocab.size, embed_size=128, hidden_dim=256, context_size=context_size
+    )
+    train_model(
+        bengio_nn,
+        bengio_loader,
+        vocab,
+        num_epochs=10,
+        learning_rate=0.001,
+        device=device,
+    )
 
     # Generate text
     start_text = ["La"]
